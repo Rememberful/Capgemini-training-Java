@@ -1,5 +1,8 @@
 package p1;
 
 public class C1 {
-	protected static String s = "Protected variable";
+	public static String s = "Protected variable";
+	protected C1() {
+		System.out.println("Protected");
+	}
 }
