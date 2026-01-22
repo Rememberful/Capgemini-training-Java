@@ -109,16 +109,26 @@ public class Demo {
 //		}
 		
 		//Try catch, with multiple catch
-		System.out.println("hi");
-		try {
-			Class.forName("loops.quesion"); ///forName will cause the exception ClassNotFoundException
-//			Class.forName("loops.questio"); //this will let the catch to work
-		} catch(ClassNotFoundException e) {
-			System.out.println("Class info is wrong");
-		} catch(ArithmeticException e) {
-			System.out.println("Something went wrong"); //since if first one is executed the next will not get executed
-		}
-		System.out.println("bye"); 
+//		System.out.println("hi");
+//		try {
+//			Class.forName("loops.quesion"); ///forName will cause the exception ClassNotFoundException
+////			Class.forName("loops.questio"); //this will let the catch to work
+//		} catch(ClassNotFoundException e) {
+//			System.out.println("Class info is wrong");
+//		} catch(ArithmeticException e) {
+//			System.out.println("Something went wrong"); //since if first one is executed the next will not get executed
+//		}
+//		System.out.println("bye");
 		
+		
+		try {
+			System.out.println(3/0);
+		} catch(ArithmeticException e) {
+			System.out.println("Handled using catch block...");
+			System.out.println("Hey");
+		} finally { // runs at any condition whether exception happened/handled or not
+			// finally is used for closing database connection
+			System.out.println("Finally block is used...");
+		}		
 	}
 }

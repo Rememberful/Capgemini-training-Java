@@ -11,8 +11,4 @@ public class DBConnection {
 		}
 		return con;
 	}
-	private DBConnection() {
-		
-	}
-	
 }
