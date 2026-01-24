@@ -3,7 +3,6 @@ package Assignment_22th_January;
 public class SpecialSymbols {
 	public static void main(String[] args) {
         String input = "Hello@#2024!";
-
         int count = 0;
         StringBuilder symbols = new StringBuilder();
 
