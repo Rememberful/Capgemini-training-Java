@@ -26,7 +26,7 @@ public class Employee {
 		a.add(new Employee(12,"Adity", "IT", 3000));
 		a.add(new Employee(13,"Aditya", "CEO", 3000));
 		a.add(new Employee(14,"Ad", "CTO", 3000));
-	}
+	}	
 	
 	public String toString() {
 		return "id:"+id+"name: " + name + "dept:" + Dept + "Salary:" + Salary;
