@@ -9,6 +9,7 @@ public class PriorityQueueExample {
 
         pq.offer(90);
         pq.offer(10);
+        pq.offer(0);
         pq.offer(50);
         pq.offer(30);
 
@@ -20,6 +21,6 @@ public class PriorityQueueExample {
         pq.remove(); // removes smallest element
         System.out.println("After remove: " + pq);
         
-//        PriorityQueue does NOT allow you to reliably print a value at a given index.
+        //PriorityQueue does NOT allow you to reliably print a value at a given index.
     }
 }
